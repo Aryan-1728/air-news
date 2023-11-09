@@ -165,7 +165,7 @@ ul.list li a:hover {
     cursor: pointer;
 }
 
-    
+
 #navbar {
     background-color: #FFF;
     position: sticky;
@@ -214,4 +214,52 @@ ul.list li a:hover {
 
 .facebook:hover {
     color: #009CFF;
+}
+
+
+/******************************************************************
+**********************CATEGORY*************************************
+******************************************************************/
+
+.category {
+    display: inline-block;
+    color: #fff;
+    font-size: .55rem;
+    padding: .4rem .6rem;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+}
+.category-sports { background-color: var(--category-sports);}
+.category-ent { background-color: var(--category-ent);}
+.category-tech { background-color: var(--category-tech);}
+
+/******************************************************************
+**********************SHOWCASE*************************************
+******************************************************************/
+
+#showcase {
+    background-color: var(--dark-color);
+    color: #fff;
+    position: relative;
+}
+#showcase:before {
+    content: "";
+    background: url('../images/featured.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+#showcase .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 60vh;
+    align-items: center;
+}
+#showcase .showcase-content {
+    z-index: 1;
 }
