@@ -281,3 +281,35 @@ ul.list li a:hover {
 .card-grid:last-child {
     grid-column: 2/span 2;
 }
+
+#pageFooter .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+#pageFooter input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: .5rem;
+}
+#pageFooter .footer-container>*:last-child {
+    grid-column: 1/span 4;
+    background-color: #444;
+    font-size: .75rem;
+    padding: .5rem;
+}
+#pageFooter .footer-container>*:last-child p {
+    text-align: center;
+    margin: 0;
+}
+
+.page-content {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+}
+
+#singleArticle .page-content>*:first-child {
+    grid-row: 1/span 3;
+}
