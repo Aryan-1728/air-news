@@ -263,3 +263,21 @@ ul.list li a:hover {
 #showcase .showcase-content {
     z-index: 1;
 }
+
+#homeArticles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+.card-grid:first-child {
+    grid-column: 1/span 2;
+}
+.card-grid:last-child {
+    grid-column: 2/span 2;
+}
